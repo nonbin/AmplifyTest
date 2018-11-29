@@ -5,11 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sample Amplify App</title>
+  <title>kintone お問い合わせ</title>
 </head>
  
 <body>
-<h1>test</h1>
-<input type="button" onclick="alert(11)"/>
-<p>Enjoy IT!</p>
+  <form action="confirmation.php" method="post" name="myform">
+    <table width="100%">
+    <tbody><tr>
+      <td>お名前</td>
+      <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+      <td>フリガナ</td>
+      <td><input type="text" name="furigana"></td>
+    </tr>
+    <tr>
+      <td>メールアドレス</td>
+      <td><input type="text" name="address"></td>
+    </tr>
+    <tr>
+      <td>電話番号</td>
+      <td><input type="text" name="tel"></td>
+    </tr>
+    <tr>
+      <td>お問い合わせ内容</td>
+      <td><textarea name="otoiawase"></textarea></td>
+    </tr>
+    </tbody></table>
+    <input type="button" value="確認画面へ" onclick="alert(111)">
+    </form>
 </body>
